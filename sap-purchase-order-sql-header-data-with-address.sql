@@ -22,6 +22,7 @@ CREATE TABLE `sap-purchase-order-header-data-with-adderss`
     `SupplyingPlant`          varchar(4) DEFAULT NULL,
     `IncotermsClassification` varchar(3) DEFAULT NULL,
     `ManualSupplierAddressID` varchar(10) DEFAULT NULL,
+    `AddressName`             varchar(50) DEFAULT NULL,
     `AddressCityName`         varchar(40) DEFAULT NULL,
     `AddressFaxNumber`        varchar(30) DEFAULT NULL,
     `AddressPostalCode`       varchar(10) DEFAULT NULL,
