@@ -13,7 +13,8 @@ https://api.sap.com/api/OP_API_PURCHASEORDER_PROCESS_SRV_0001/overview
 
 sap-purchase-order-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* sap-purchase-order-sql-header-data-with-address.sql
+* sap-purchase-order-sql-header-data-with-address.sql（SAP 購買発注 - ヘッダデータ と 住所情報）  
+* sap-purchase-order-sql-item-data-with-address.sql（SAP 購買発注 - 明細データ と 住所情報）  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
