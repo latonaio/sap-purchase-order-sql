@@ -14,6 +14,7 @@ CREATE TABLE `sap-purchase-order-item-data-with-address`
     `DocumentCurrency`        varchar(5) DEFAULT NULL,
     `NetPriceAmount`          float(11) DEFAULT NULL,
     `NetPriceQuantity`        float(13) DEFAULT NULL,
+    `ScheduleLineDeliveryDate` date DEFAULT NULL,
     `TaxCode`                 varchar(2) DEFAULT NULL,
     `OverdelivTolrtdLmtRatioInPct` float(3) DEFAULT NULL,
     `UnlimitedOverdeliveryIsAllowed` varchar(1) DEFAULT NULL,
