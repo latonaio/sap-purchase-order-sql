@@ -38,11 +38,11 @@ CREATE TABLE `sap-purchase-order-item-data-with-address`
     `InternationalArticleNumber` varchar(18) DEFAULT NULL,
     `DeliveryAddressID`       varchar(10) DEFAULT NULL,
     `DeliveryAddressName`     varchar(50) DEFAULT NULL,
-    `AddressPostalCode`       varchar(10) DEFAULT NULL,
-    `AddressStreetName`       varchar(60) DEFAULT NULL,
-    `AddressPhoneNumber`      varchar(30) DEFAULT NULL,
-    `AddressRegion`           varchar(3) DEFAULT NULL,
-    `AddressCountry`          varchar(3) DEFAULT NULL,
+    `DeliveryAddressPostalCode` varchar(10) DEFAULT NULL,
+    `DeliveryAddressStreetName` varchar(60) DEFAULT NULL,
+    `DeliveryAddressCityName` varchar(40) DEFAULT NULL,
+    `DeliveryAddressRegion`   varchar(3) DEFAULT NULL,
+    `DeliveryAddressCountry`  varchar(3) DEFAULT NULL,
     `PurchasingDocumentDeletionCode` varchar(1) DEFAULT NULL,
     PRIMARY KEY (`PurchaseOrder`, `PurchaseOrderItem`)
     CONSTRAINT `PurchaseOrder_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap-purchase-order-header-data-with-address` (`PurchaseOrder`)
