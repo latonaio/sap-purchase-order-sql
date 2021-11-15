@@ -15,6 +15,7 @@ sap-purchase-order-sql には、sqlの設定ファイルとして、以下のフ
 
 * sap-purchase-order-sql-header-data-with-address.sql（SAP 購買発注 - ヘッダデータ と 住所情報）  
 * sap-purchase-order-sql-item-data-with-address.sql（SAP 購買発注 - 明細データ と 住所情報）  
+* sap-purchase-order-sql-account-assignment-data.sql（SAP 購買発注 - 勘定設定データ）  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
