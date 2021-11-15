@@ -10,7 +10,7 @@ CREATE TABLE `sap-purchase-order-item-data-with-address`
     `SupplierMaterialNumber`  varchar(35) DEFAULT NULL,
     `OrderQuantity`           float(13) DEFAULT NULL,
     `PurchaseOrderQuantityUnit` varchar(3) DEFAULT NULL,
-    `OrderPriceUnit`          float(13) DEFAULT NULL,
+    `OrderPriceUnit`          varchar(3) DEFAULT NULL,
     `DocumentCurrency`        varchar(5) DEFAULT NULL,
     `NetPriceAmount`          float(11) DEFAULT NULL,
     `NetPriceQuantity`        float(13) DEFAULT NULL,
