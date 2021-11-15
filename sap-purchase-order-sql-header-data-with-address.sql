@@ -10,7 +10,6 @@ CREATE TABLE `sap-purchase-order-header-data-with-adderss`
     `Language`                varchar(2) DEFAULT NULL,
     `PaymentTerms`            varchar(4) DEFAULT NULL,
     `PurchasingOrganization`  varchar(4) DEFAULT NULL,
-    `PurchasingDocumentOrigin` varchar(1) DEFAULT NULL,
     `PurchasingGroup`         varchar(3) DEFAULT NULL,
     `PurchaseOrderDate`       date DEFAULT NULL,
     `DocumentCurrency`        varchar(5) DEFAULT NULL,
