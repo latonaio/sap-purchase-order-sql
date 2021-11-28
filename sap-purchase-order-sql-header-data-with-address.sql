@@ -13,7 +13,7 @@ CREATE TABLE `sap-purchase-order-header-data-with-adderss`
     `PurchasingGroup`         varchar(3) DEFAULT NULL,
     `PurchaseOrderDate`       date DEFAULT NULL,
     `DocumentCurrency`        varchar(5) DEFAULT NULL,
-    `ExchangeRate`            float(9) DEFAULT NULL,
+    `ExchangeRate`            varchar(9) DEFAULT NULL,
     `ValidityStartDate`       date DEFAULT NULL,
     `ValidityEndDate`         date DEFAULT NULL,
     `SupplierRespSalesPersonName` varchar(30) DEFAULT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE `sap-purchase-order-header-data-with-adderss`
     `AddressPhoneNumber`      varchar(30) DEFAULT NULL,
     `AddressRegion`           varchar(3) DEFAULT NULL,
     `AddressCountry`          varchar(3) DEFAULT NULL,
-    `PurchasingDocumentDeletionCode` varchar(1) DEFAULT NULL,
+    `PurchasingDocumentDeletionCode` tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`PurchaseOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
