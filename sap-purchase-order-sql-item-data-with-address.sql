@@ -44,7 +44,7 @@ CREATE TABLE `sap-purchase-order-item-data-with-address`
     `DeliveryAddressCityName` varchar(40) DEFAULT NULL,
     `DeliveryAddressRegion`   varchar(3) DEFAULT NULL,
     `DeliveryAddressCountry`  varchar(3) DEFAULT NULL,
-    `PurchasingDocumentDeletionCode` tinyint(1) DEFAULT NULL,
+    `PurchasingDocumentDeletionCode` varchar(1) DEFAULT NULL,
     PRIMARY KEY (`PurchaseOrder`, `PurchaseOrderItem`)
     CONSTRAINT `PurchaseOrder_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap-purchase-order-header-data-with-address` (`PurchaseOrder`)
 ) ENGINE = InnoDB
