@@ -1,6 +1,6 @@
 CREATE TABLE `sap-purchase-order-header-data-with-adderss`
 (
-    `PurchaseOrder`           varchar(10) DEFAULT NULL,
+    `PurchaseOrder`           varchar(10) NOT NULL,
     `CompanyCode`             varchar(4) DEFAULT NULL,
     `PurchaseOrderType`       varchar(4) DEFAULT NULL,
     `PurchasingProcessingStatus` varchar(2) DEFAULT NULL,

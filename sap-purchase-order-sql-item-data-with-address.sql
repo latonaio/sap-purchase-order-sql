@@ -1,7 +1,7 @@
 CREATE TABLE `sap-purchase-order-item-data-with-address`
 (
-    `PurchaseOrder`           varchar(10) DEFAULT NULL,
-    `PurchaseOrderItem`       varchar(5) DEFAULT NULL,
+    `PurchaseOrder`           varchar(10) NOT NULL,
+    `PurchaseOrderItem`       varchar(5) NOT NULL,
     `PurchaseOrderItemText`   varchar(40) DEFAULT NULL,
     `Plant`                   varchar(4) DEFAULT NULL,
     `StorageLocation`         varchar(4) DEFAULT NULL,
