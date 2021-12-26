@@ -1,4 +1,4 @@
-CREATE TABLE `sap-purchase-order-item-data-with-address`
+CREATE TABLE `sap_purchase_order_item_data_with_address`
 (
     `PurchaseOrder`           varchar(10) NOT NULL,
     `PurchaseOrderItem`       varchar(5) NOT NULL,
@@ -45,6 +45,6 @@ CREATE TABLE `sap-purchase-order-item-data-with-address`
     `DeliveryAddressCountry`  varchar(3) DEFAULT NULL,
     `PurchasingDocumentDeletionCode` varchar(1) DEFAULT NULL,
     PRIMARY KEY (`PurchaseOrder`, `PurchaseOrderItem`)
-    CONSTRAINT `PurchaseOrder_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap-purchase-order-header-data-with-address` (`PurchaseOrder`)
+    CONSTRAINT `SAPPurchaseOrderItemDataWithAddress_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap_purchase_order_header_data_with_address` (`PurchaseOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

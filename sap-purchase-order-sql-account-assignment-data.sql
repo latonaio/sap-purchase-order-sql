@@ -1,4 +1,4 @@
-CREATE TABLE `sap-purchase-order-account-assignment-data`
+CREATE TABLE `sap_purchase_order_account_assignment_data`
 (
     `PurchaseOrder`           varchar(10) NOT NULL,
     `PurchaseOrderItem`       varchar(5) NOT NULL,
@@ -24,6 +24,6 @@ CREATE TABLE `sap-purchase-order-account-assignment-data`
     `CostCtrActivityType`     varchar(6) DEFAULT NULL,
     `IsDeleted`               tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`PurchaseOrder`, `PurchaseOrderItem`, `AccountAssignmentNumber`),
-    CONSTRAINT `PurchaseOrder_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap-purchase-order-header-data-with-address` (`PurchaseOrder`)
+    CONSTRAINT `SAPPurchaseOrderAccountAssignmentData_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap_purchase_order_header_data_with_address` (`PurchaseOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
