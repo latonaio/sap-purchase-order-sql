@@ -1,4 +1,4 @@
-CREATE TABLE `sap_purchase_order_schedule_line_data`
+CREATE TABLE `sap_purchase_order_item_schedule_line_data`
 (
     `PurchaseOrder`           varchar(10) NOT NULL,
     `PurchaseOrderItem`       varchar(5) NOT NULL,
@@ -12,6 +12,6 @@ CREATE TABLE `sap_purchase_order_schedule_line_data`
     `PurchaseRequisitionItem` varchar(5) DEFAULT NULL,
     `ScheduleLineCommittedQuantity` varchar(13) DEFAULT NULL,
     PRIMARY KEY (`PurchaseOrder`, `PurchaseOrderItem`, `ScheduleLine`),
-    CONSTRAINT `SAPPurchaseOrderScheduleLineData_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap_purchase_order_header_data_with_address` (`PurchaseOrder`)
+    CONSTRAINT `SAPPurchaseOrderItemScheduleLineData_fk` FOREIGN KEY (`PurchaseOrder`) REFERENCES `sap_purchase_order_header_data_with_address` (`PurchaseOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
