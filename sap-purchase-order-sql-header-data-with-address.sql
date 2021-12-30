@@ -1,4 +1,4 @@
-CREATE TABLE `sap_purchase_order_header_data_with_adderss`
+CREATE TABLE `sap_purchase_order_header_data_with_address`
 (
     `PurchaseOrder`           varchar(10) NOT NULL,
     `CompanyCode`             varchar(4) DEFAULT NULL,
